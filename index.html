@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maza Wala Tag Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="start-screen">
+    <h2>Select Number of Players</h2>
+    <button onclick="startGame(2)">2 Players</button>
+    <button onclick="startGame(3)">3 Players</button>
+    <button onclick="startGame(4)">4 Players</button>
+  </div>
+
+  <div id="game-ui" style="display: none;">
+    <h1>Maza Wala Tag Game 😎</h1>
+    <div id="info">
+      <div>Time: <span id="timer">0</span> s</div>
+      <div>“It”: <span id="it-player">Player 1</span></div>
+      <div>Scores:
+        <span id="scores"></span>
+      </div>
+    </div>
+    <div id="game-area">
+      <div id="player1" class="player">1</div>
+      <div id="player2" class="player">2</div>
+      <div id="player3" class="player">3</div>
+      <div id="player4" class="player">4</div>
+      <div id="power-up" class="power-up" style="display:none;"></div>
+    </div>
+    <div id="game-over" style="display:none;">
+      <h2>Game Over!</h2>
+      <p>Winner: <span id="winner-name"></span></p>
+      <p>Final Scores: <span id="final-scores"></span></p>
+      <button onclick="location.reload()">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

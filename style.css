@@ -1,0 +1,63 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f0ff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#start-screen {
+  margin-top: 100px;
+}
+
+#start-screen button {
+  padding: 10px 20px;
+  font-size: 18px;
+  margin: 10px;
+}
+
+#info {
+  margin-bottom: 10px;
+}
+
+#game-area {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  margin: auto;
+  background: #d0e0ff;
+  border: 3px solid #444;
+  overflow: hidden;
+}
+
+.player {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#player1 { background: red; }
+#player2 { background: blue; }
+#player3 { background: green; }
+#player4 { background: orange; }
+
+.power-up {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: gold;
+  border-radius: 50%;
+  border: 2px solid #444;
+}
+
+#game-over {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #d00;
+}
